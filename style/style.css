@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-1 {
+    position: absolute;
+    top: -600px;
+    left: -300px;
+}
+
+.img-2 {
+    position: absolute;
+    bottom: -600px;
+    right: -300px;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    width: 550px;
+    height: 650px;
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .img-top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card .img-profile {
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7.5rem;
+    border: 7px solid white;
+}
+
+.card .main {
+    margin-top: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card .main h2 {
+    font-size: 30px;
+    color: hsl(229, 23%, 23%);
+}
+
+.card .main .age {
+    font-size: 30px;
+    color: hsl(227, 10%, 46%);
+}
+
+.card .city {
+    font-size: 30px;
+    margin: 0.7rem 0 0 0;
+    color: hsl(227, 10%, 46%);
+}
+
+.card .bottom {
+    border-top: 1px solid hsl(0, 0%, 59%);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 100px;
+}
+
+.card .bottom .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+.card .bottom .stats h2 {
+    color: hsl(229, 23%, 23%);
+    font-size: 35px;
+}
+
+.card .bottom .stats p {
+    color: hsl(227, 10%, 46%);
+    font-size: 23px;
+}
+
+@media (max-width:375px) {
+
+    .card {
+        width: 90%;
+        height: 90%;
+    }
+
+}
